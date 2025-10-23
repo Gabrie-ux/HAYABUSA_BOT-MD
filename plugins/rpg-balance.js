@@ -2,7 +2,6 @@ import fs from 'fs'
 
 let handler = async (m, { conn, usedPrefix }) => {
   try {
-    // Verifica si la economía está activa en el grupo
     if (m.isGroup && !db.data.chats[m.chat].economy) {
       return m.reply(`🚫 Los comandos de *Economía* están desactivados en este grupo.
 
