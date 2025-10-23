@@ -86,7 +86,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 > *Tip:* Deposita tu dinero con _${usedPrefix}deposit_ para evitar perderlo.`
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://files.catbox.moe/8xasa6.jpg' },
+    image: { url: 'https://files.catbox.moe/2vwn2d.jpg' },
     caption: texto.trim(),
     mentions: [who],
     fileName: 'rpg-balance.jpg',
