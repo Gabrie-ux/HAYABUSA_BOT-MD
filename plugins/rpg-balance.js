@@ -35,7 +35,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 `
 
     await conn.sendMessage(m.chat, {
-      image: { url: 'https://files.catbox.moe/2vwn2d.jpg' },
+      image: { url: 'https://files.catbox.moe/q0fupw.jpg' },
       caption: texto,
       mentions: [who]
     }, { quoted: m })
