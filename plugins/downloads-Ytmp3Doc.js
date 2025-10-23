@@ -169,13 +169,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 │ ° 📌 *Título:* ${result.title}
 │ ° ⏱️ *Duración:* ${vid.duration}
 │ ° 👽 *Canal:* ${vid.author?.name || "Desconocido"}
-│ ° 🍧 *Calidad:* ${result.quality}p
+│ ° 📹 *Calidad:* ${result.quality}p
 │ ° 🏔️ *Link:* ${vid.url}
 ╰───────────────⬣
 
 ૮₍｡˃ ᵕ ˂ ｡₎ა 🚀 *¡Descarga Completa con exito!*
 
-> ☁️ ᴋᴀɴᴇᴋɪ ʙᴏᴛ ɪᴀ | 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝚂𝙷𝙰𝙳𝙾𝚆-𝚇𝚈𝚉`.trim()
+> 🎃ɢᴏᴊᴏʙᴏᴛ - ᴍᴅ | 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ᴄᴀʀʟᴏs.ʀᴠ`.trim()
 
     let thumb = null
     try {
