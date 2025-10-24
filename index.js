@@ -10,7 +10,7 @@ import fs, { readdirSync, statSync, unlinkSync, existsSync, mkdirSync, readFileS
 import yargs from 'yargs';
 import { spawn, execSync } from 'child_process'
 import lodash from 'lodash'
-import { kanekiAIJadiBot } from './plugins/sockets-serbot.js'
+import { yukiJadiBot } from './plugins/sockets-serbot.js'
 import chalk from 'chalk'
 import syntaxerror from 'syntax-error'
 import pino from 'pino'
@@ -33,12 +33,12 @@ const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
 
 let { say } = cfonts
 console.log(chalk.magentaBright('\n❀ Iniciando...'))
-say('KANEKI - BOT AI', {
-font: 'block',
-align: 'center',
+say('GojoBot-MD', {
+font: 'simple',
+align: 'left',
 gradient: ['green', 'white']
 })
-say('Made with love by Shadow_xyz', {
+say('Made with love by Carlos.Rv', {
 font: 'console',
 align: 'center',
 colors: ['cyan', 'magenta', 'yellow']
@@ -248,7 +248,7 @@ console.error("Rechazo no manejado detectado:", reason);
 });
 
 global.rutaJadiBot = join(__dirname, `./${jadi}`)
-if (global.kanekiAIJadibts) {
+if (global.yukiJadibts) {
 if (!existsSync(global.rutaJadiBot)) {
 mkdirSync(global.rutaJadiBot, { recursive: true }) 
 console.log(chalk.bold.cyan(`ꕥ La carpeta: ${jadi} se creó correctamente.`))
@@ -262,7 +262,7 @@ for (const gjbts of readRutaJadiBot) {
 const botPath = join(rutaJadiBot, gjbts)
 const readBotPath = readdirSync(botPath)
 if (readBotPath.includes(creds)) {
-kanekiAIJadiBot({pathkanekiAIJadiBot: botPath, m: null, conn, args: '', usedPrefix: '/', command: 'serbot'})
+yukiJadiBot({pathYukiJadiBot: botPath, m: null, conn, args: '', usedPrefix: '/', command: 'serbot'})
 }}}}
 
 const pluginFolder = global.__dirname(join(__dirname, './plugins/index'))
@@ -362,3 +362,4 @@ for (const value of Object.values(global.ch)) {
 if (typeof value === 'string' && value.endsWith('@newsletter')) {
 await sock.newsletterFollow(value).catch(() => {})
 }}}
+  
